@@ -1,98 +1,155 @@
-# 宅宅能量条系统 v0.1
-# 目标：先搭出主菜单和基础结构，后续慢慢加功能
+import tkinter as tk
+from tkinter import ttk
+from datetime import datetime
+import json
 
+# 基础功能区
+class Otaku:
+    def __init__(self):
+        save_data = self.load_save()
+        self.energy = save_data["energy"]
 
-energy = 50  # 当前宅宅能量，初始值
-history = [] # 历史记录
+    def do_action(self, action, change):
+        self.change_energy(change)
+        self.check_energy()
+        self.save_state()
+        self.save_log(action, change)
 
-def show_status():
-    """查看当前状态"""
-    print("\n===== 当前状态 =====")
-    print(f"宅宅能量：{energy}")
-    print("====================")
+    def change_energy(self, change):
+        self.energy += change
 
+    def check_energy(self):
+        self.energy = max(0,min(100,self.energy))
 
-def study():
-    """学习模块"""
-    global energy
-    energy += 10
-    history.append("学习 +10")
-    print("\n你学习了一会儿，宅宅能量 +10")
+    def save_log(self, action, change):
+        now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        with open("log.txt", "a", encoding="utf-8") as f:
+            f.write(f"{now}|{action}|能量变化：{change}|当前能量：{self.energy}\n")
 
+    def load_log(self):
+        try:
+            with open("log.txt", "r", encoding="utf-8") as f:
+                return [line.strip() for line in f]
+        except FileNotFoundError:
+            return []
 
-def exercise():
-    """健身模块"""
-    global energy
-    energy += 15
-    history.append("健身 +15")
-    print("\n你去健身了，宅宅能量 +15")
+    def load_save(self):
+        try:
+            with open("save.json", "r", encoding="utf-8") as f:
+                return json.load(f)
+        except FileNotFoundError:
+            return {
+                "energy": 50
+            }
 
+    def save_state(self):
+        data = {
+            "energy": self.energy
+        }
 
-def watch_anime():
-    """看番模块"""
-    global energy
-    energy -= 20
-    history.append("看番 -20")
-    print("\n你沉浸式看番，宅宅能量 -20")
+        with open("save.json", "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=4)
 
+    def study(self):
+        self.do_action("学习", 10)
 
-def check_energy():
-    global energy
+    def exercise(self):
+        self.do_action("健身", 15)
 
-    energy = max(0, energy)
-    energy = min(100, energy)
+    def anime(self):
+        self.do_action("看番", -20)
 
+    def rest(self):
+        self.do_action("休息", +5)
 
-def show_history():
-    print("\n===== 行动记录 =====")
+# 交互窗口
+class OtakuSystem:
+    def __init__(self):
 
-    if len(history) == 0:
-        print("今天什么都还没做喵")
-    else:
-        for record in history:
-            print(record)
+        self.player = Otaku()
+        self.window = tk.Tk()
+        self.window.title("宅宅能量条系统 v0.4")
+        self.window.geometry("600x450")
 
-    print("===================")
+        # 标题
+        self.title_label = tk.Label(
+            self.window,
+            text="宅宅能量条系统",
+            font=("Microsoft YaHei", 18)
+        )
 
+        # 能量条
+        self.title_label.pack(pady=15)
+        self.energy_label = tk.Label(
+            self.window,
+            text=f"宅宅能量：{self.player.energy}/100",
+            font=("Microsoft YaHei", 14)
+        )
+        self.energy_label.pack()
 
-def show_menu():
-    """显示菜单"""
-    print("\n====== 宅宅能量条系统 ======")
-    print("1. 查看状态")
-    print("2. 学习")
-    print("3. 健身")
-    print("4. 看番")
-    print("5. 查看行动记录")
-    print("0. 退出系统")
-    print("===========================")
+        # 进度条
+        self.energy_bar = ttk.Progressbar(
+            self.window,
+            length=250,
+            maximum=100,
+            value=self.player.energy
+        )
 
+        self.energy_bar.pack()
 
-def main():
-    """程序主入口"""
-    print("欢迎进入：宅宅能量条系统！")
+        # 按钮
+        actions = [
+            ("学习 +10", self.player.study),
+            ("健身 +15", self.player.exercise),
+            ("看番 -20", self.player.anime),
+            ("休息 +5", self.player.rest)
+        ]
+        for text, func in actions:
+            btn = tk.Button(
+                self.window,
+                text=text,
+                width=12,
+                command=lambda f=func: (
+                    f(),
+                    self.update_display()
+                )
+            )
+            btn.pack()
 
-    while True:
-        show_menu()
-        choice = input("请选择操作：")
+        # 历史记录
+        self.history_label = tk.Label(
+            self.window,
+            text="行动记录",
+            font=("Microsoft YaHei", 12)
+        )
+        self.history_label.pack()
 
-        if choice == "1":
-            show_status()
-        elif choice == "2":
-            study()
-            check_energy()
-        elif choice == "3":
-            exercise()
-            check_energy()
-        elif choice == "4":
-            watch_anime()
-            check_energy()
-        elif choice == "5":
-            show_history()
-        elif choice == "0":
-            print("\n系统关闭。今天也辛苦了喵。")
-            break
+        self.history_text = tk.Text(
+            self.window,
+            height=10,
+            width=70
+        )
+        self.history_text.pack()
+
+    def update_display(self):
+        logs = self.player.load_log()
+        self.energy_label.config(
+            text=f"宅宅能量：{self.player.energy}/100"
+        )
+        self.energy_bar["value"] = self.player.energy
+        self.history_text.delete("1.0", tk.END)
+
+        if len(logs) == 0:
+            self.history_text.insert(tk.END, "今天还没有行动记录喵")
         else:
-            print("\n输入无效，请重新选择。")
+            for item in logs:
+                self.history_text.insert(tk.END, item + "\n")
 
+    def run(self):
+        self.update_display()
 
-main()
+        self.window.mainloop()
+
+app = OtakuSystem()
+
+app.run()
