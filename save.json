@@ -1,4 +1,18 @@
 {
-    "energy": 135,
-    "exp": 50
+    "energy": 180,
+    "exp": 200,
+    "unlocked_achievements": [
+        "first_study",
+        "energy_full",
+        "task_beginner"
+    ],
+    "action_counts": {
+        "写简历": 12,
+        "打游戏": 17,
+        "看番": 4,
+        "健身": 12,
+        "学习": 25,
+        "推gal": 12
+    },
+    "done_task_count": 2
 }
