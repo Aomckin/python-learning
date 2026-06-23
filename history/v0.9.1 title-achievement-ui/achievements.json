@@ -1,0 +1,27 @@
+[
+    {
+        "id": "first_study",
+        "name": "第一次学习",
+        "desc": "完成一次学习行动",
+        "condition_type": "action_count",
+        "target_action": "学习",
+        "target_value": 1,
+        "reward_exp": 20
+    },
+    {
+        "id": "task_beginner",
+        "name": "任务初心者",
+        "desc": "完成1个任务",
+        "condition_type": "task_done_count",
+        "target_value": 1,
+        "reward_exp": 30
+    },
+    {
+        "id": "energy_full",
+        "name": "满溢的宅宅能量",
+        "desc": "能量达到180",
+        "condition_type": "energy_reach",
+        "target_value": 180,
+        "reward_exp": 50
+    }
+]
