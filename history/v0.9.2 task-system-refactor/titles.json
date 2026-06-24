@@ -1,0 +1,29 @@
+[
+  {
+    "id": "beginner",
+    "name": "初学者 🌱",
+    "desc": "迈出第一步的人。",
+    "condition_type": "task_completed_count",
+    "target_value": 1,
+    "bonus_type": "exp_rate",
+    "bonus_value": 0.05
+  },
+  {
+    "id": "executor",
+    "name": "熟练执行者 ⚙️",
+    "desc": "稳定完成任务，行动开始形成节奏。",
+    "condition_type": "task_completed_count",
+    "target_value": 5,
+    "bonus_type": "exp_rate",
+    "bonus_value": 0.1
+  },
+  {
+    "id": "task_master",
+    "name": "任务支配者 🐉",
+    "desc": "你已经能稳定支配每日任务。",
+    "condition_type": "task_completed_count",
+    "target_value": 10,
+    "bonus_type": "exp_rate",
+    "bonus_value": 0.2
+  }
+]
