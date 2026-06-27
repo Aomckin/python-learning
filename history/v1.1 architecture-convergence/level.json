@@ -1,0 +1,7 @@
+{
+    "initial_level": 1,
+    "max_level": 20,
+    "base_required_exp": 20,
+    "step_levels": 5,
+    "step_increase_exp": 10
+}

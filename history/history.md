@@ -152,3 +152,16 @@
 - 新增默认主题结构，为后续主题切换预留 `themes.py`。
 - 补充成就、计时行动、称号、主题等测试。
 - 将 `.idea/`、`save.json`、`log.txt`、`.venv/`、`__pycache__/` 作为本地文件排除在版本快照之外。
+
+## v1.1 architecture-convergence
+
+快照：`history/v1.1 architecture-convergence/`
+
+- 引入 Core 命令入口和事件返回结构，UI 通过 `GameCommand` 调用 Core，通过 `GameEvent` 展示结果。
+- 新增 Service 层，行动、任务、商店、成就、称号、进度检查和视图拼装从 UI/Core 中拆出。
+- 新增 Repository 层，玩家存档和日志 IO 统一放入 `repositories/player_repository.py`。
+- `PlayerService` 收口为唯一玩家状态修改入口，只负责玩家状态读取和修改，不再负责 JSON 或日志 IO。
+- `Player` 保持为纯状态实体，兼容现有 `save.json` 字段。
+- `GameState` 收口为 UI ViewModel，只包含展示字段和视图列表。
+- 增加架构守卫测试，防止跨模块直接写 `player` 状态、PlayerService 回流 IO、UI 穿透 Core 内部结构。
+- 保持现有玩法、存档结构和 Tkinter 操作流程不变。

@@ -1,0 +1,7 @@
+{
+  "window_title": "宅宅能量条系统 v1.0",
+  "window_size": "650x1000",
+  "max_energy": 180,
+  "default_energy": 50,
+  "theme": "default"
+}

@@ -1,0 +1,159 @@
+[
+    {
+        "id": "beginner",
+        "name": "初学者 🌱",
+        "desc": "迈出第一步的人。",
+        "condition_type": "task_completed_count",
+        "target_value": 1,
+        "bonus_type": "exp_rate",
+        "bonus_value": 0.05
+    },
+    {
+        "id": "executor",
+        "name": "熟练执行者 ⚙️",
+        "desc": "稳定完成任务，行动开始形成节奏。",
+        "condition_type": "task_completed_count",
+        "target_value": 10,
+        "bonus_type": "exp_rate",
+        "bonus_value": 0.1
+    },
+    {
+        "id": "task_master",
+        "name": "任务支配者 🐉",
+        "desc": "今日任务已经无法阻挡你。",
+        "condition_type": "task_completed_count",
+        "target_value": 50,
+        "bonus_type": "exp_rate",
+        "bonus_value": 0.15
+    },
+    {
+        "id": "archmage",
+        "name": "大魔法师 🧙‍♂️",
+        "desc": "把日常行动炼成魔法的人。",
+        "condition_type": "shop_purchase",
+        "target_value": "archmage_title",
+        "bonus_type": "positive_energy_rate",
+        "bonus_value": 0.25
+    },
+    {
+        "id": "magic_apprentice",
+        "name": "魔法学徒 📉",
+        "desc": "开始研读改变世界的咒文。",
+        "condition_type": "action_count",
+        "target_value": {
+            "action_id": "学习",
+            "count": 20
+        },
+        "bonus_type": "action_energy_rate",
+        "bonus_value": {
+            "action_id": "学习",
+            "rate": 0.1
+        }
+    },
+    {
+        "id": "bug_tamer",
+        "name": "Bug驯兽师 🐰",
+        "desc": "错误不会消失，但已经开始听话。",
+        "condition_type": "action_count",
+        "target_value": {
+            "action_id": "敲代码",
+            "count": 50
+        },
+        "bonus_type": "action_energy_rate",
+        "bonus_value": {
+            "action_id": "敲代码",
+            "rate": 0.2
+        }
+    },
+    {
+        "id": "muscle_mage",
+        "name": "肉体派法师 💪",
+        "desc": "魔力不足时，就直接依靠力量解决。",
+        "condition_type": "action_count",
+        "target_value": {
+            "action_id": "健身",
+            "count": 20
+        },
+        "bonus_type": "action_energy_rate",
+        "bonus_value": {
+            "action_id": "健身",
+            "rate": 0.15
+        }
+    },
+    {
+        "id": "wind_traveler_title",
+        "name": "风之旅人 🍈",
+        "desc": "城市道路是另一种开放世界。",
+        "condition_type": "outdoor_task_completed_count",
+        "target_value": 10,
+        "bonus_type": "outdoor_task_exp_rate",
+        "bonus_value": 0.15
+    },
+    {
+        "id": "dimension_observer",
+        "name": "次元观察员 📵",
+        "desc": "负责记录其他世界的故事。",
+        "condition_type": "action_count",
+        "target_value": {
+            "action_id": "看番",
+            "count": 20
+        },
+        "bonus_type": "action_energy_cost_reduction",
+        "bonus_value": {
+            "action_id": "看番",
+            "rate": 0.1
+        }
+    },
+    {
+        "id": "legal_slacker",
+        "name": "合法摸鱼大师 🐷",
+        "desc": "只要认真记录，就不算完全白玩。",
+        "condition_type": "action_combo_count",
+        "target_value": [
+            {
+                "action_id": "看番",
+                "count": 20
+            },
+            {
+                "action_id": "推gal",
+                "count": 20
+            },
+            {
+                "action_id": "打游戏",
+                "count": 20
+            }
+        ],
+        "bonus_type": "negative_action_exp_rate",
+        "bonus_value": 0.2
+    },
+    {
+        "id": "information_insulator",
+        "name": "信息绝缘体 📰",
+        "desc": "世界很吵，你暂时关上了窗。",
+        "condition_type": "special_task_completed_count",
+        "target_value": {
+            "task_id": "offline_training",
+            "count": 3
+        },
+        "bonus_type": "special_task_exp_rate",
+        "bonus_value": 0.1
+    },
+    {
+        "id": "focus_caster",
+        "name": "专注施法者 🍊",
+        "desc": "专注时间被压缩成稳定魔力。",
+        "condition_type": "timed_action_completed_count",
+        "target_value": 20,
+        "bonus_type": "positive_energy_rate",
+        "bonus_value": 0.1
+    },
+    {
+        "id": "achievement_collector",
+        "name": "成就收藏家 🏆",
+        "desc": "每一枚徽章，都是生活留下的一块切片。",
+        "condition_type": "achievement_unlocked_count",
+        "target_value": 20,
+        "bonus_type": "exp_rate",
+        "bonus_value": 0.15
+    }
+]
