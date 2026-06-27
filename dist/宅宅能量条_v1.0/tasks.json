@@ -1,0 +1,82 @@
+{
+    "last_update_date": "2026-06-27",
+    "active_task_ids": [
+        "no_short_video_day",
+        "drink_2000ml_water",
+        "clean_desk"
+    ],
+    "tasks": [
+        {
+            "id": "study_python",
+            "name": "学习Python",
+            "reward": 10,
+            "exp": 5,
+            "created_time": "2026-06-18 23:37:55",
+            "completed_count": 0,
+            "done": false
+        },
+        {
+            "id": "exercise",
+            "name": "健身",
+            "reward": 15,
+            "exp": 5,
+            "created_time": "2026-06-18 23:37:55",
+            "completed_count": 1,
+            "done": false
+        },
+        {
+            "id": "read_30_minutes",
+            "name": "阅读30分钟",
+            "reward": 10,
+            "exp": 5,
+            "created_time": "2026-06-24 00:00:00",
+            "completed_count": 1,
+            "done": false
+        },
+        {
+            "id": "walk_20_minutes",
+            "name": "散步20分钟",
+            "reward": 10,
+            "exp": 5,
+            "created_time": "2026-06-24 00:00:00",
+            "completed_count": 1,
+            "done": false
+        },
+        {
+            "id": "clean_desk",
+            "name": "整理桌面",
+            "reward": 5,
+            "exp": 3,
+            "created_time": "2026-06-24 00:00:00",
+            "completed_count": 0,
+            "done": false
+        },
+        {
+            "id": "drink_2000ml_water",
+            "name": "喝够2000ml水",
+            "reward": 5,
+            "exp": 3,
+            "created_time": "2026-06-24 00:00:00",
+            "completed_count": 0,
+            "done": false
+        },
+        {
+            "id": "wake_before_11",
+            "name": "早于11点起床",
+            "reward": 15,
+            "exp": 5,
+            "created_time": "2026-06-24 00:00:00",
+            "completed_count": 0,
+            "done": false
+        },
+        {
+            "id": "no_short_video_day",
+            "name": "无短视频日",
+            "reward": 20,
+            "exp": 10,
+            "created_time": "2026-06-24 00:00:00",
+            "completed_count": 0,
+            "done": false
+        }
+    ]
+}

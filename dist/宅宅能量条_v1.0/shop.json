@@ -1,0 +1,51 @@
+{
+    "categories": [
+        "任务",
+        "成长",
+        "称号",
+        "娱乐",
+        "收藏"
+    ],
+    "items": [
+        {
+            "id": "refresh_daily_tasks",
+            "name": "刷新每日任务",
+            "category": "任务",
+            "desc": "重新抽取今日普通任务，不重置已完成状态。",
+            "price": 20,
+            "stock_type": "daily",
+            "effect_type": "refresh_daily_tasks",
+            "effect_value": 1
+        },
+        {
+            "id": "daily_double_exp",
+            "name": "单日双倍经验",
+            "category": "成长",
+            "desc": "今日普通任务和特殊任务经验变为2倍。",
+            "price": 50,
+            "stock_type": "daily",
+            "effect_type": "daily_double_exp",
+            "effect_value": 2
+        },
+        {
+            "id": "special_task_slot",
+            "name": "增加特殊任务栏位",
+            "category": "任务",
+            "desc": "永久增加1个每日特殊任务栏位。",
+            "price": 120,
+            "stock_type": "permanent",
+            "effect_type": "special_task_slot",
+            "effect_value": 1
+        },
+        {
+            "id": "archmage_title",
+            "name": "大魔法师 🧙‍♂️",
+            "category": "称号",
+            "desc": "解锁称号：大魔法师 🧙‍♂️。佩戴后正向行动能量收益+25%。",
+            "price": 160,
+            "stock_type": "permanent",
+            "effect_type": "unlock_title",
+            "effect_value": "archmage"
+        }
+    ]
+}

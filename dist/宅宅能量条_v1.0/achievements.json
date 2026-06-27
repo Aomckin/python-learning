@@ -1,0 +1,575 @@
+[
+    {
+        "id": "study_20",
+        "name": "知识点亮",
+        "desc": "零散的知识开始连成星图。",
+        "condition_type": "action_count",
+        "target_action": "学习",
+        "target_value": 20,
+        "reward_coin": 30,
+        "reward_exp": 10
+    },
+    {
+        "id": "study_50",
+        "name": "书页回响",
+        "desc": "认真留下的痕迹，已经无法忽略。",
+        "condition_type": "action_count",
+        "target_action": "学习",
+        "target_value": 50,
+        "reward_coin": 80,
+        "reward_exp": 25
+    },
+    {
+        "id": "study_100",
+        "name": "学识魔法使",
+        "desc": "知识不再只是输入，而是逐渐成为你的力量。",
+        "condition_type": "action_count",
+        "target_action": "学习",
+        "target_value": 100,
+        "reward_coin": 150,
+        "reward_exp": 50
+    },
+    {
+        "id": "exercise_20",
+        "name": "身体启动",
+        "desc": "沉睡的身体系统已重新上线。",
+        "condition_type": "action_count",
+        "target_action": "健身",
+        "target_value": 20,
+        "reward_coin": 30,
+        "reward_exp": 10
+    },
+    {
+        "id": "exercise_50",
+        "name": "钢铁习惯",
+        "desc": "力量不是突然降临，而是一点点举起来的。",
+        "condition_type": "action_count",
+        "target_action": "健身",
+        "target_value": 50,
+        "reward_coin": 80,
+        "reward_exp": 25
+    },
+    {
+        "id": "exercise_100",
+        "name": "肉体派魔法师",
+        "desc": "魔力不足时，也可以直接靠力量解决。",
+        "condition_type": "action_count",
+        "target_action": "健身",
+        "target_value": 100,
+        "reward_coin": 150,
+        "reward_exp": 50
+    },
+    {
+        "id": "code_20",
+        "name": "代码学徒",
+        "desc": "世界改变之前，先让程序成功运行。",
+        "condition_type": "action_count",
+        "target_action": "敲代码",
+        "target_value": 20,
+        "reward_coin": 30,
+        "reward_exp": 10
+    },
+    {
+        "id": "code_50",
+        "name": "逻辑编织者",
+        "desc": "变量与函数正在织成属于你的魔法阵。",
+        "condition_type": "action_count",
+        "target_action": "敲代码",
+        "target_value": 50,
+        "reward_coin": 80,
+        "reward_exp": 25
+    },
+    {
+        "id": "code_100",
+        "name": "改变世界的魔法",
+        "desc": "第一百次施法完成，新的世界正在编译。",
+        "condition_type": "action_count",
+        "target_action": "敲代码",
+        "target_value": 100,
+        "reward_coin": 150,
+        "reward_exp": 50
+    },
+    {
+        "id": "anime_20",
+        "name": "追番入门",
+        "desc": "故事的大门已经打开。",
+        "condition_type": "action_count",
+        "target_action": "看番",
+        "target_value": 20,
+        "reward_coin": 30,
+        "reward_exp": 10
+    },
+    {
+        "id": "anime_50",
+        "name": "次元旅人",
+        "desc": "你已在许多个世界留下观察记录。",
+        "condition_type": "action_count",
+        "target_action": "看番",
+        "target_value": 50,
+        "reward_coin": 80,
+        "reward_exp": 25
+    },
+    {
+        "id": "anime_100",
+        "name": "百番阅历",
+        "desc": "现实只有一条时间线，而你见过一百次远方。",
+        "condition_type": "action_count",
+        "target_action": "看番",
+        "target_value": 100,
+        "reward_coin": 150,
+        "reward_exp": 50
+    },
+    {
+        "id": "gal_20",
+        "name": "线路初探",
+        "desc": "第一次选择之后，故事开始分岔。",
+        "condition_type": "action_count",
+        "target_action": "推gal",
+        "target_value": 20,
+        "reward_coin": 30,
+        "reward_exp": 10
+    },
+    {
+        "id": "gal_50",
+        "name": "选项观察者",
+        "desc": "存档、读档，然后抵达更多可能。",
+        "condition_type": "action_count",
+        "target_action": "推gal",
+        "target_value": 50,
+        "reward_coin": 80,
+        "reward_exp": 25
+    },
+    {
+        "id": "gal_100",
+        "name": "全线制霸",
+        "desc": "无数条线路汇聚成了只属于你的记忆。",
+        "condition_type": "action_count",
+        "target_action": "推gal",
+        "target_value": 100,
+        "reward_coin": 150,
+        "reward_exp": 50
+    },
+    {
+        "id": "game_20",
+        "name": "玩家上线",
+        "desc": "控制器连接成功，冒险开始。",
+        "condition_type": "action_count",
+        "target_action": "打游戏",
+        "target_value": 20,
+        "reward_coin": 30,
+        "reward_exp": 10
+    },
+    {
+        "id": "game_50",
+        "name": "熟练玩家",
+        "desc": "失败、重来、突破，这也是经验值。",
+        "condition_type": "action_count",
+        "target_action": "打游戏",
+        "target_value": 50,
+        "reward_coin": 80,
+        "reward_exp": 25
+    },
+    {
+        "id": "game_100",
+        "name": "百战玩家",
+        "desc": "你打过的并非一百局游戏，而是一百场小型人生。",
+        "condition_type": "action_count",
+        "target_action": "打游戏",
+        "target_value": 100,
+        "reward_coin": 150,
+        "reward_exp": 50
+    },
+    {
+        "id": "first_action",
+        "name": "能量启动",
+        "desc": "宅宅能量系统完成第一次运转。",
+        "condition_type": "total_action_count",
+        "target_value": 1,
+        "reward_coin": 10,
+        "reward_exp": 5
+    },
+    {
+        "id": "first_daily_task",
+        "name": "任务初体验",
+        "desc": "任务列表上，出现了第一个完成标记。",
+        "condition_type": "task_done_count",
+        "target_value": 1,
+        "reward_coin": 15,
+        "reward_exp": 5
+    },
+    {
+        "id": "first_special_task",
+        "name": "支线开启",
+        "desc": "日常之外，一条新的支线被点亮。",
+        "condition_type": "special_task_done_count",
+        "target_value": 1,
+        "reward_coin": 15,
+        "reward_exp": 10
+    },
+    {
+        "id": "level_5",
+        "name": "初窥门径",
+        "desc": "最初的积累，已经开始显现轮廓。",
+        "condition_type": "level",
+        "target_value": 5,
+        "reward_coin": 40,
+        "reward_exp": 0
+    },
+    {
+        "id": "level_10",
+        "name": "渐入佳境",
+        "desc": "你已走过一半等级旅程。",
+        "condition_type": "level",
+        "target_value": 10,
+        "reward_coin": 60,
+        "reward_exp": 0
+    },
+    {
+        "id": "level_15",
+        "name": "魔力涌动",
+        "desc": "长期积累正在转化为稳定的力量。",
+        "condition_type": "level",
+        "target_value": 15,
+        "reward_coin": 100,
+        "reward_exp": 0
+    },
+    {
+        "id": "level_20",
+        "name": "满级宅宅",
+        "desc": "当前版本的等级边界，已被你亲手抵达。",
+        "condition_type": "level",
+        "target_value": 20,
+        "reward_coin": 200,
+        "reward_exp": 0
+    },
+    {
+        "id": "focused_learner",
+        "name": "专注学习者",
+        "desc": "学习不再只是坐在桌前，而是真正进入了状态。",
+        "condition_type": "task_combo",
+        "requirements": [
+            {
+                "source": "daily",
+                "task_id": "study_python",
+                "count": 1
+            },
+            {
+                "source": "special",
+                "task_id": "deep_casting",
+                "count": 1
+            }
+        ],
+        "reward_coin": 50,
+        "reward_exp": 20
+    },
+    {
+        "id": "coding_flow",
+        "name": "代码心流",
+        "desc": "知识输入与代码输出终于接通了回路。",
+        "condition_type": "task_combo",
+        "requirements": [
+            {
+                "source": "daily",
+                "task_id": "study_python",
+                "count": 3
+            },
+            {
+                "source": "special",
+                "task_id": "magic_research",
+                "count": 1
+            }
+        ],
+        "reward_coin": 80,
+        "reward_exp": 30
+    },
+    {
+        "id": "quiet_sage",
+        "name": "安静的贤者",
+        "desc": "当信息流退潮，文字重新显露出重量。",
+        "condition_type": "task_combo",
+        "requirements": [
+            {
+                "source": "daily",
+                "task_id": "read_30_minutes",
+                "count": 3
+            },
+            {
+                "source": "special",
+                "task_id": "sage_moment",
+                "count": 1
+            }
+        ],
+        "reward_coin": 80,
+        "reward_exp": 30
+    },
+    {
+        "id": "city_adventurer",
+        "name": "城市冒险者",
+        "desc": "熟悉的城市里，也藏着尚未解锁的地图。",
+        "condition_type": "task_combo",
+        "requirements": [
+            {
+                "source": "daily",
+                "task_id": "walk_20_minutes",
+                "count": 3
+            },
+            {
+                "source": "special",
+                "task_id": "wind_traveler",
+                "count": 1
+            }
+        ],
+        "reward_coin": 80,
+        "reward_exp": 30
+    },
+    {
+        "id": "wheels_and_steps",
+        "name": "风与脚步",
+        "desc": "双腿记住的不只有重量，还有迎面而来的风。",
+        "condition_type": "task_combo",
+        "requirements": [
+            {
+                "source": "daily",
+                "task_id": "exercise",
+                "count": 3
+            },
+            {
+                "source": "special",
+                "task_id": "city_roaming",
+                "count": 1
+            }
+        ],
+        "reward_coin": 80,
+        "reward_exp": 30
+    },
+    {
+        "id": "inner_journey",
+        "name": "向内远行",
+        "desc": "有些旅途没有目的地，却能抵达自己。",
+        "condition_type": "task_combo",
+        "requirements": [
+            {
+                "source": "daily",
+                "task_id": "walk_20_minutes",
+                "count": 5
+            },
+            {
+                "source": "special",
+                "task_id": "face_inner_self",
+                "count": 1
+            }
+        ],
+        "reward_coin": 100,
+        "reward_exp": 40
+    },
+    {
+        "id": "healthy_routine",
+        "name": "生活维护员",
+        "desc": "身体不是一次性装备，也需要认真维护。",
+        "condition_type": "task_combo",
+        "requirements": [
+            {
+                "source": "daily",
+                "task_id": "drink_2000ml_water",
+                "count": 3
+            },
+            {
+                "source": "daily",
+                "task_id": "exercise",
+                "count": 3
+            },
+            {
+                "source": "special",
+                "task_id": "hair_defense",
+                "count": 1
+            }
+        ],
+        "reward_coin": 80,
+        "reward_exp": 30
+    },
+    {
+        "id": "morning_reboot",
+        "name": "清晨重启",
+        "desc": "昨夜及时关机，今日才能顺利启动。",
+        "condition_type": "task_combo",
+        "requirements": [
+            {
+                "source": "daily",
+                "task_id": "wake_before_11",
+                "count": 3
+            },
+            {
+                "source": "special",
+                "task_id": "sleep_early_challenge",
+                "count": 1
+            }
+        ],
+        "reward_coin": 80,
+        "reward_exp": 30
+    },
+    {
+        "id": "clean_life",
+        "name": "秩序结界",
+        "desc": "整理桌面，也整理散落在一天里的思绪。",
+        "condition_type": "task_combo",
+        "requirements": [
+            {
+                "source": "daily",
+                "task_id": "clean_desk",
+                "count": 3
+            },
+            {
+                "source": "special",
+                "task_id": "record_this_moment",
+                "count": 1
+            }
+        ],
+        "reward_coin": 80,
+        "reward_exp": 30
+    },
+    {
+        "id": "information_breaker",
+        "name": "信息断食者",
+        "desc": "注意力从信息洪流中成功脱身。",
+        "condition_type": "task_combo",
+        "requirements": [
+            {
+                "source": "daily",
+                "task_id": "no_short_video_day",
+                "count": 1
+            },
+            {
+                "source": "special",
+                "task_id": "offline_training",
+                "count": 1
+            }
+        ],
+        "reward_coin": 100,
+        "reward_exp": 40
+    },
+    {
+        "id": "sky_without_screen",
+        "name": "屏幕之外",
+        "desc": "关闭一块发光的屏幕，抬头看见另一片光。",
+        "condition_type": "task_combo",
+        "requirements": [
+            {
+                "source": "daily",
+                "task_id": "no_short_video_day",
+                "count": 3
+            },
+            {
+                "source": "special",
+                "task_id": "stargazer",
+                "count": 1
+            }
+        ],
+        "reward_coin": 80,
+        "reward_exp": 30
+    },
+    {
+        "id": "taste_of_city",
+        "name": "城市试吃员",
+        "desc": "不是每家新店都好吃，但每次尝试都算探索。",
+        "condition_type": "task_combo",
+        "requirements": [
+            {
+                "source": "daily",
+                "task_id": "walk_20_minutes",
+                "count": 1
+            },
+            {
+                "source": "special",
+                "task_id": "canteen_explorer",
+                "count": 1
+            }
+        ],
+        "reward_coin": 50,
+        "reward_exp": 25
+    },
+    {
+        "id": "social_reconnection",
+        "name": "重新连接",
+        "desc": "人与人的连接，有时从一次散步开始。",
+        "condition_type": "task_combo",
+        "requirements": [
+            {
+                "source": "daily",
+                "task_id": "walk_20_minutes",
+                "count": 1
+            },
+            {
+                "source": "special",
+                "task_id": "human_observer",
+                "count": 1
+            },
+            {
+                "source": "special",
+                "task_id": "summer_night_walk",
+                "count": 1
+            }
+        ],
+        "reward_coin": 100,
+        "reward_exp": 40
+    },
+    {
+        "id": "creator_seed",
+        "name": "创作者的种子",
+        "desc": "一个点子被记录下来，便获得了发芽的可能。",
+        "condition_type": "task_combo",
+        "requirements": [
+            {
+                "source": "special",
+                "task_id": "spark_of_inspiration",
+                "count": 1
+            },
+            {
+                "source": "special",
+                "task_id": "record_this_moment",
+                "count": 1
+            }
+        ],
+        "reward_coin": 50,
+        "reward_exp": 25
+    },
+    {
+        "id": "leave_your_mark",
+        "name": "留下痕迹",
+        "desc": "灵感没有消散，而是变成了世界上的一处坐标。",
+        "condition_type": "task_combo",
+        "requirements": [
+            {
+                "source": "special",
+                "task_id": "spark_of_inspiration",
+                "count": 3
+            },
+            {
+                "source": "special",
+                "task_id": "leave_a_trace",
+                "count": 1
+            }
+        ],
+        "reward_coin": 80,
+        "reward_exp": 30
+    },
+    {
+        "id": "echoes_of_youth",
+        "name": "过去的回声",
+        "desc": "此刻的你，与过去的自己短暂重逢。",
+        "condition_type": "task_combo",
+        "requirements": [
+            {
+                "source": "special",
+                "task_id": "record_this_moment",
+                "count": 1
+            },
+            {
+                "source": "special",
+                "task_id": "past_self",
+                "count": 1
+            }
+        ],
+        "reward_coin": 100,
+        "reward_exp": 40
+    }
+]

@@ -1,0 +1,26 @@
+{
+  "学习": {
+    "energy_change": 10,
+    "description": "进行了学习，宅宅能量增加"
+  },
+  "健身": {
+    "energy_change": 15,
+    "description": "完成健身，宅宅能量增加"
+  },
+  "敲代码": {
+    "energy_change": 20,
+    "description": "敲了不少代码，宅宅能量大幅增加"
+  },
+  "看番": {
+    "energy_change": -10,
+    "description": "看了番，宅宅能量消耗"
+  },
+  "推gal": {
+    "energy_change": -15,
+    "description": "推了gal，宅宅能量消耗"
+  },
+  "打游戏": {
+    "energy_change": -20,
+    "description": "打了游戏，宅宅能量大幅消耗"
+  }
+}

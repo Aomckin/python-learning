@@ -1,0 +1,162 @@
+{
+    "last_update_date": "2026-06-27",
+    "active_task_id": "sage_moment",
+    "tasks": [
+        {
+            "id": "deep_casting",
+            "name": "进入心流状态1小时",
+            "coin": 30,
+            "exp": 20,
+            "created_time": "2026-06-24 00:00:00",
+            "completed_count": 0,
+            "done": false
+        },
+        {
+            "id": "magic_research",
+            "name": "连续编程90分钟",
+            "coin": 40,
+            "exp": 25,
+            "created_time": "2026-06-24 00:00:00",
+            "completed_count": 0,
+            "done": false
+        },
+        {
+            "id": "sage_moment",
+            "name": "读书两章节",
+            "coin": 20,
+            "exp": 15,
+            "created_time": "2026-06-24 00:00:00",
+            "completed_count": 1,
+            "done": false
+        },
+        {
+            "id": "wind_traveler",
+            "name": "去没去过的地方散步",
+            "coin": 30,
+            "exp": 15,
+            "created_time": "2026-06-24 00:00:00",
+            "completed_count": 0,
+            "done": false
+        },
+        {
+            "id": "city_roaming",
+            "name": "骑行10km",
+            "coin": 40,
+            "exp": 20,
+            "created_time": "2026-06-24 00:00:00",
+            "completed_count": 0,
+            "done": false
+        },
+        {
+            "id": "canteen_explorer",
+            "name": "尝试从未吃过的店",
+            "coin": 15,
+            "exp": 10,
+            "created_time": "2026-06-24 00:00:00",
+            "completed_count": 0,
+            "done": false
+        },
+        {
+            "id": "human_observer",
+            "name": "主动和朋友聊30分钟",
+            "coin": 20,
+            "exp": 10,
+            "created_time": "2026-06-24 00:00:00",
+            "completed_count": 0,
+            "done": false
+        },
+        {
+            "id": "summer_night_walk",
+            "name": "找朋友外出散步",
+            "coin": 35,
+            "exp": 15,
+            "created_time": "2026-06-24 00:00:00",
+            "completed_count": 0,
+            "done": false
+        },
+        {
+            "id": "record_this_moment",
+            "name": "写100字日记",
+            "coin": 15,
+            "exp": 10,
+            "created_time": "2026-06-24 00:00:00",
+            "completed_count": 0,
+            "done": false
+        },
+        {
+            "id": "leave_a_trace",
+            "name": "发布一篇内容",
+            "coin": 20,
+            "exp": 15,
+            "created_time": "2026-06-24 00:00:00",
+            "completed_count": 0,
+            "done": false
+        },
+        {
+            "id": "spark_of_inspiration",
+            "name": "记录一个新点子",
+            "coin": 10,
+            "exp": 5,
+            "created_time": "2026-06-24 00:00:00",
+            "completed_count": 0,
+            "done": false
+        },
+        {
+            "id": "sleep_early_challenge",
+            "name": "1点前睡觉",
+            "coin": 30,
+            "exp": 15,
+            "created_time": "2026-06-24 00:00:00",
+            "completed_count": 0,
+            "done": false
+        },
+        {
+            "id": "hair_defense",
+            "name": "正确吹头发",
+            "coin": 10,
+            "exp": 5,
+            "created_time": "2026-06-24 00:00:00",
+            "completed_count": 0,
+            "done": false
+        },
+        {
+            "id": "face_inner_self",
+            "name": "独自散步1小时",
+            "coin": 60,
+            "exp": 30,
+            "created_time": "2026-06-24 00:00:00",
+            "completed_count": 1,
+            "done": false
+        },
+        {
+            "id": "offline_training",
+            "name": "4小时不刷任何信息流",
+            "coin": 80,
+            "exp": 40,
+            "created_time": "2026-06-24 00:00:00",
+            "completed_count": 1,
+            "done": false
+        },
+        {
+            "id": "stargazer",
+            "name": "晚上抬头看10分钟天空",
+            "coin": 30,
+            "exp": 10,
+            "created_time": "2026-06-24 00:00:00",
+            "completed_count": 0,
+            "done": false
+        },
+        {
+            "id": "past_self",
+            "name": "重做一件高中时期喜欢的事",
+            "coin": 50,
+            "exp": 25,
+            "created_time": "2026-06-24 00:00:00",
+            "completed_count": 0,
+            "done": false
+        }
+    ],
+    "active_task_ids": [
+        "leave_a_trace"
+    ]
+}
