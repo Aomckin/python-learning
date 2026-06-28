@@ -165,3 +165,15 @@
 - `GameState` 收口为 UI ViewModel，只包含展示字段和视图列表。
 - 增加架构守卫测试，防止跨模块直接写 `player` 状态、PlayerService 回流 IO、UI 穿透 Core 内部结构。
 - 保持现有玩法、存档结构和 Tkinter 操作流程不变。
+
+## v1.2 web-console
+
+快照：`history/v1.2 web-console/`
+
+- 新增 FastAPI 网页控制台，使用原生 HTML/CSS/JavaScript 调用 `/state` 与 `/command`。
+- 网页端支持行动时长选择、番茄钟、任务、商店、成就和称号。
+- 商店、成就、称号在网页端改为二级弹窗展示。
+- Tkinter 改为 FastAPI HTTP 客户端，与网页端共用同一个后端 `GameCore()` 状态源。
+- 行动经验由 `actions.json` 的 `exp_change` 数据驱动。
+- 数据文件路径统一到项目根目录，测试可用 `OTAKU_ENERGY_DATA_DIR` 覆盖。
+- 新增 API、客户端、网页静态资源、路径和架构相关测试。

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>宅宅能量条控制台</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <main class="page">
+        <header class="header">
+            <h1>宅宅能量条控制台</h1>
+            <button id="refreshButton" type="button">刷新状态</button>
+        </header>
+
+        <section class="panel">
+            <h2>当前状态</h2>
+            <div class="stats">
+                <div><strong>能量</strong><span id="energy">-</span></div>
+                <div><strong>经验</strong><span id="exp">-</span></div>
+                <div><strong>等级</strong><span id="level">-</span></div>
+                <div><strong>金币</strong><span id="coin">-</span></div>
+                <div><strong>称号</strong><span id="title">-</span></div>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>行动</h2>
+            <div id="actions" class="actions"></div>
+        </section>
+
+        <section id="durationPanel" class="panel hidden">
+            <h2>选择时长：<span id="durationActionName">-</span></h2>
+            <div id="durationOptions" class="duration-options"></div>
+            <button id="durationCancelButton" class="secondary" type="button">取消</button>
+        </section>
+
+        <section id="timerPanel" class="panel hidden">
+            <h2>番茄钟</h2>
+            <div class="timer-grid">
+                <div><strong>行动</strong><span id="timerActionName">-</span></div>
+                <div><strong>总时长</strong><span id="timerTotal">-</span></div>
+                <div><strong>剩余</strong><span id="timerRemaining">-</span></div>
+                <div><strong>状态</strong><span id="timerStatus">-</span></div>
+            </div>
+            <div class="timer-controls">
+                <button id="pauseTimerButton" type="button">暂停</button>
+                <button id="resumeTimerButton" type="button">继续</button>
+                <button id="abandonTimerButton" class="danger" type="button">放弃</button>
+            </div>
+        </section>
+
+        <section class="two-column">
+            <section class="panel">
+                <div class="panel-title">
+                    <h2>每日任务</h2>
+                    <button id="refreshTasksButton" class="secondary" type="button">刷新每日任务</button>
+                </div>
+                <div id="dailyTasks" class="task-grid"></div>
+            </section>
+
+            <section class="panel">
+                <h2>特殊任务</h2>
+                <div id="specialTasks" class="task-grid"></div>
+            </section>
+        </section>
+
+        <section class="panel">
+            <h2>功能入口</h2>
+            <div class="feature-buttons">
+                <button id="openShopButton" type="button">打开商店</button>
+                <button id="openAchievementsButton" type="button">查看成就</button>
+                <button id="openTitlesButton" type="button">查看称号</button>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>最近日志</h2>
+            <div id="logs" class="logs">暂无日志</div>
+        </section>
+
+        <section class="panel">
+            <h2>请求结果</h2>
+            <pre id="result" class="result">等待操作</pre>
+        </section>
+    </main>
+
+    <dialog id="shopDialog" class="modal">
+        <div class="modal-header">
+            <h2>商店</h2>
+            <button class="secondary" data-close-dialog="shopDialog" type="button">关闭</button>
+        </div>
+        <div class="modal-body">
+            <div id="shop" class="shop-grid"></div>
+        </div>
+    </dialog>
+
+    <dialog id="achievementsDialog" class="modal">
+        <div class="modal-header">
+            <h2>成就</h2>
+            <button class="secondary" data-close-dialog="achievementsDialog" type="button">关闭</button>
+        </div>
+        <div class="modal-body">
+            <div id="achievements" class="achievement-grid"></div>
+        </div>
+    </dialog>
+
+    <dialog id="titlesDialog" class="modal">
+        <div class="modal-header">
+            <h2>称号</h2>
+            <button class="secondary" data-close-dialog="titlesDialog" type="button">关闭</button>
+        </div>
+        <div class="modal-body">
+            <div id="titles" class="title-grid"></div>
+        </div>
+    </dialog>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
